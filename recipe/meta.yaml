@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "cucumber-expressions" %}
-{% set version = "18.0.0" %}
+{% set version = "18.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cucumber_expressions-{{ version }}.tar.gz
-  sha256: 7a484b6dfa293f0b2114dcd28b8b1c56895e3174e5519e3ae7fccb42c2ce625e
+  sha256: b6f31c15def3821ed8313d7c59c3ccd6e5b607ee65b86ad33140a43e8858d1f2
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
