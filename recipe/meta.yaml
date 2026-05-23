@@ -1,5 +1,5 @@
 {% set name = "cucumber-expressions" %}
-{% set version = "19.0.0" %}
+{% set version = "19.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cucumber_expressions-{{ version }}.tar.gz
-  sha256: 8eb5ae46dd03dd37fec1163ace1510529501d7d1868ff372c1ab2cd5aa4543a8
+  sha256: 4b5283aed366a6fc37d02d6c42d58a9a2fdca1d17535aaace9b61daabc947cd4
 
 build:
   noarch: python
